@@ -222,6 +222,76 @@
     max-width: 475px;
 }
 
+/*-------------------- section-3---------------------- */
+
+.secction_3_heading {
+    font-family: var(--ff-ModernoFBComp);
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 83.2px;
+    text-align: left;
+}
+
+/* --------------section-4----------------------*/
+
+.slider1_font1 {
+    font-family: Noto Serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    text-align: left;
+}
+
+.slider1_para {
+    font-family: Noto Serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+}
+
+.slider1_heading {
+    font-family: Noto Serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 39.85px;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+.slider1_box {
+    padding: 50px 21px 46px;
+    height: 100% !important;
+    border-right: 2px solid black;
+}
+
+.slick-list {
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+.slider-1 .slick-slide {
+    height: inherit !important;
+    display: flex !important;
+}
+
+.slider-1 .slick-track {
+    display: flex !important;
+}
+
+.slider-1 .slick-slide>div {
+    display: flex;
+}
+
+.slick-dots {
+    display: none;
+}
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 @media (min-width:1400px) {
     .heading_main {
         font-family: var(--ff-ModernoFBComp);
