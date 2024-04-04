@@ -51,6 +51,7 @@
     --color-red: #FF1300;
     --color-black: black;
     --color-yellow: #FFD600;
+    --color-green: #00A106;
 
     --font-weight-xsm: 300;
     --font-weight-sm: 400;
@@ -148,19 +149,19 @@
 
 /* nav-3 */
 .border_top {
-    border-top: 2px solid var(--color-black);
+    border-top: 2px solid var(--color-black) !important;
 }
 
 .border_bottom {
-    border-bottom: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black) !important;
 }
 
 .border_left {
-    border-left: 2px solid var(--color-black);
+    border-left: 2px solid var(--color-black) !important;
 }
 
 .border_right {
-    border-right: 2px solid var(--color-black);
+    border-right: 2px solid var(--color-black) !important;
 }
 
 .nav-3-font {
@@ -189,13 +190,7 @@
 }
 
 /* ---------------section-2-------------- */
-/* .section_2_heading {
-    font-family: Noto Serif;
-    font-size: var(--font-size-72);
-    font-weight: 400;
-    line-height: 100.8px;
-    text-align: left;
-} */
+
 .section_2_heading {
     font-family: Noto Serif;
     font-size: var(--font-size-36);
@@ -211,6 +206,7 @@
     line-height: 21.79px;
     text-align: left;
     color: var(--color-black);
+    text-decoration: none;
 }
 
 .sec-2-font-2 {
@@ -224,9 +220,9 @@
 
 /*-------------------- section-3---------------------- */
 
-.secction_3_heading {
+.section_3_heading {
     font-family: var(--ff-ModernoFBComp);
-    font-size: 80px;
+    font-size: 48px;
     font-weight: 300;
     line-height: 83.2px;
     text-align: left;
@@ -240,6 +236,8 @@
     font-weight: 400;
     line-height: 19.07px;
     text-align: left;
+    color: var(--color-black);
+    text-decoration: none;
 }
 
 .slider1_para {
@@ -252,7 +250,7 @@
 
 .slider1_heading {
     font-family: Noto Serif;
-    font-size: 36px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 39.85px;
     text-align: left;
@@ -290,6 +288,73 @@
 .py-40 {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.prev {
+    cursor: pointer;
+}
+
+.next {
+    cursor: pointer;
+}
+
+/* ---------------section-5------------ */
+
+/* counter-app */
+
+.counter {
+    width: max-content;
+}
+
+.decrement-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 12px 8px 13px !important;
+}
+
+.increment-btn {
+    background: transparent;
+    border: none;
+}
+
+.counter-font {
+    font-family: Noto Serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 49.03px;
+    text-align: left;
+}
+
+
+/* timer */
+
+.mint {
+    background-color: var(--color-yellow);
+    border: 2px solid var(--color-black);
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+#timer {
+    font-family: Noto Serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 49.03px;
+    text-align: left;
+    color: var(--color-red);
+}
+
+.time-left {
+    font-family: Noto Serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.52px;
+    text-align: left;
+    color: var(--color-green);
+}
+
+.w-30 {
+    width: 30%;
 }
 
 @media (min-width:1400px) {
@@ -341,6 +406,14 @@
         text-align: left;
         max-width: 475px;
     }
+
+    .section_3_heading {
+        font-family: Noto Serif;
+        font-size: var(--font-size-90) !important;
+        font-weight: 400;
+        line-height: 83.2px;
+        text-align: left;
+    }
 }
 
 @media (min-width:768px) {
@@ -355,9 +428,39 @@
         border-right: none;
     }
 
+    .section_3_heading {
+        font-family: var(--ff-ModernoFBComp);
+        font-size: var(--font-size-64);
+        font-weight: 300;
+        line-height: 83.2px;
+        text-align: left;
+    }
+
+    .border_md_left {
+        border-left: 2px solid var(--color-black);
+    }
 }
 
-@media (min-width:576px) {}
+@media (min-width:576px) {
+    .slider1_heading {
+        font-family: Noto Serif;
+        font-size: var(--font-size-36);
+        font-weight: 600;
+        line-height: 39.85px;
+        text-align: left;
+        text-wrap: nowrap;
+    }
+
+    .w-sm-unset {
+        width: unset;
+    }
+
+    .decrement-btn {
+        border: none;
+        background: transparent;
+        padding: 16px 19px 16px 19px !important;
+    }
+}
 
 @media (max-width:768px) {
     .menu_dots {
