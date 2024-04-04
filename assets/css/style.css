@@ -357,6 +357,28 @@
     width: 30%;
 }
 
+/* ----------------section-6------------------------------ */
+.text-box6 {
+    padding: 0 20px;
+}
+
+.sec-6-font1 {
+    font-family: Noto Serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.57px;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+.sec-6-font2 {
+    font-family: Noto Serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 39.85px;
+    text-align: left;
+}
+
 @media (min-width:1400px) {
     .heading_main {
         font-family: var(--ff-ModernoFBComp);
