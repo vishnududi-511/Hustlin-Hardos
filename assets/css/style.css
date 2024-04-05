@@ -52,12 +52,14 @@
     --color-black: black;
     --color-yellow: #FFD600;
     --color-green: #00A106;
+    --color-brownish: #70675F;
 
     --font-weight-xsm: 300;
     --font-weight-sm: 400;
     --font-weight-md: 500;
     --font-weight-lg: 600;
     --font-weight-xl: 700;
+    --font-weight-xxxl: 900;
 
     --ff-noto-serif: "Noto Serif", serif;
     --ff-poppins: "Poppins", sans-serif;
@@ -260,7 +262,7 @@
 .slider1_box {
     padding: 50px 21px 46px;
     height: 100% !important;
-    border-right: 2px solid black;
+    border-right: 2px solid var(--color-black);
 }
 
 .slick-list {
@@ -496,6 +498,53 @@
     bottom: 56px;
 }
 
+/* slider-2 */
+
+.slider2_box {
+    padding: 50px 21px 46px;
+    height: 100% !important;
+    border-right: 2px solid var(--color-black);
+    background-image: url(../images/slider2-bg.png);
+}
+
+.slider2_para {
+    font-family: Noto Serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: center;
+}
+
+.slider2_heading {
+    font-family: Noto Serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 49.03px;
+    text-align: center;
+    color: var(--color-brownish);
+}
+
+.slider-2 .slick-slide {
+    height: inherit !important;
+    display: flex !important;
+}
+
+.slider-2 .slick-track {
+    display: flex !important;
+}
+
+.slider-2 .slick-slide>div {
+    display: flex;
+}
+
+.prev_2 {
+    cursor: pointer;
+}
+
+.next_2 {
+    cursor: pointer;
+}
+
 @media (min-width:1400px) {
     .heading_main {
         font-family: var(--ff-ModernoFBComp);
@@ -539,7 +588,7 @@
 
     .sec-2-font-2 {
         font-family: Noto Serif;
-        font-size: 1p8x;
+        font-size: 18px;
         font-weight: 400;
         line-height: 21.79px;
         text-align: left;
@@ -552,6 +601,15 @@
         font-weight: 400;
         line-height: 83.2px;
         text-align: left;
+    }
+
+    .slider2_heading {
+        font-family: Noto Serif;
+        font-size: var(--font-size-36) !important;
+        font-weight: var(--font-weight-xxxl);
+        line-height: 49.03px;
+        text-align: center;
+        color: var(--color-brownish);
     }
 }
 
