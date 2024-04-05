@@ -158,3 +158,40 @@ function updateTime() {
 }
 
 setInterval(updateTime, 10); // Update every 10 milliseconds
+
+// accordion//
+
+let accordion_boxes = document.querySelectorAll(".accordion-box");
+
+accordion_boxes.forEach((items, index) => {
+  let head_box = items.querySelector(".accordion_btn");
+  let paragraph = items.querySelector(".accordion_para");
+  let plus_sign = items.querySelector(".accordion_sign");
+
+  // to hide all except the first one //
+  if (index !== 0) {
+    paragraph.style.display = "none";
+    plus_sign.innerHTML = "+";
+  }
+
+  // Add event listener to each button //
+  head_box.addEventListener("click", function () {
+    if (paragraph.style.display === "none") {
+      paragraph.style.display = "block";
+      plus_sign.innerHTML = "-";
+    } else {
+      paragraph.style.display = "none";
+      plus_sign.innerHTML = "+";
+    }
+
+    // If an accordion box is opened, close other accordion boxes //
+    if (paragraph.style.display === "block") {
+      accordion_boxes.forEach((other, otherIndex) => {
+        if (otherIndex !== index) {
+          other.querySelector(".accordion_para").style.display = "none";
+          other.querySelector(".accordion_sign").textContent = "+";
+        }
+      });
+    }
+  });
+});
