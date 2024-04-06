@@ -91,12 +91,15 @@ $(".slider-2").slick({
 let nav_2 = document.querySelector(".nav_2_items");
 let dots_2 = document.querySelector(".menu_dots");
 let cross_1 = document.querySelector(".cross-btn-1");
+let shadow_nav2 = document.querySelector(".nav_2_shadow");
 
 dots_2.addEventListener("click", function () {
   nav_2.classList.toggle("active");
+  nav_2.classList.toggle("nav_2_shadow");
 });
 cross_1.addEventListener("click", function () {
   nav_2.classList.remove("active");
+  nav_2.classList.remove("nav_2_shadow");
 });
 
 let counter = 100;
@@ -194,4 +197,18 @@ accordion_boxes.forEach((items, index) => {
       });
     }
   });
+});
+
+let scroll_button = document.querySelector(".scroll-button");
+
+function backtoTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 700) {
+    scroll_button.setAttribute("style", "display: flex;");
+  } else {
+    scroll_button.setAttribute("style", "display: none;");
+  }
 });
