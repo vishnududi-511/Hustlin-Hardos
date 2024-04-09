@@ -363,6 +363,11 @@
     text-align: left;
 }
 
+.mint:hover {
+    background-color: var(--color-black);
+    color: var(--color-yellow);
+}
+
 #timer {
     font-family: var(--ff-noto-serif);
     font-size: 36px;
