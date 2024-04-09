@@ -132,6 +132,10 @@
     color: var(--color-black);
 }
 
+.nav_2_items a:hover span svg path {
+    fill: var(--color-orange);
+}
+
 .connect-wallet {
     Padding: 12px 16px 12px 16px;
     background-color: var(--color-yellow);
@@ -143,6 +147,11 @@
     line-height: 19.07px;
     color: var(--color-black);
     text-align: left;
+}
+
+.connect-wallet:hover {
+    background-color: var(--color-black);
+    color: var(--color-yellow);
 }
 
 .gap-18 {
@@ -198,7 +207,7 @@
     font-family: var(--ff-noto-serif);
     font-size: var(--font-size-36);
     font-weight: var(--font-weight-sm);
-    line-height: 70.8px;
+    line-height: 50.8px;
     text-align: left;
     background-color: var(--text-bg);
     color: transparent;
@@ -213,7 +222,6 @@
     line-height: 21.79px;
     text-align: left;
     color: var(--color-black);
-    text-decoration: none;
 }
 
 .sec-2-font-2 {
@@ -248,7 +256,6 @@
     line-height: 19.07px;
     text-align: left;
     color: var(--color-black);
-    text-decoration: none;
 }
 
 .slider1_para {
@@ -325,7 +332,7 @@
 .decrement-btn {
     border: none;
     background: transparent;
-    padding: 8px 12px 8px 13px !important;
+    padding: 16px 19px 16px 19px !important;
 }
 
 .increment-btn {
@@ -337,7 +344,7 @@
     font-family: var(--ff-noto-serif);
     font-size: var(--font-size-36);
     font-weight: var(--font-weight-lg);
-    line-height: 49.03px;
+    line-height: 22.03px;
     text-align: left;
 }
 
@@ -349,6 +356,11 @@
     border: 2px solid var(--color-black);
     padding: 12px 16px;
     cursor: pointer;
+    font-family: var(--ff-noto-serif);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-lg);
+    line-height: 19.07px;
+    text-align: left;
 }
 
 #timer {
@@ -377,6 +389,7 @@
 /* ----------------section-6------------------------------ */
 .text-box6 {
     padding: 0 20px;
+    width: 200px;
 }
 
 .sec-6-font1 {
@@ -631,7 +644,7 @@
 
 ::-webkit-scrollbar {
     width: 5px;
-    height: 8px;
+    height: 5px;
     cursor: pointer;
 }
 
@@ -670,6 +683,10 @@
 @media (min-width:992px) {
     .lg-gap-220 {
         gap: 220px;
+    }
+
+    .lg-max-width-unset {
+        max-width: unset !important;
     }
 
     .section_2_heading {
@@ -764,6 +781,10 @@
         padding: 20px 30px 20px 30px;
     }
 
+    .md-max-width-700 {
+        max-width: 700px;
+    }
+
 }
 
 @media (min-width:576px) {
@@ -778,12 +799,6 @@
 
     .w-sm-unset {
         width: unset;
-    }
-
-    .decrement-btn {
-        border: none;
-        background: transparent;
-        padding: 16px 19px 16px 19px !important;
     }
 
     /* timeline */
@@ -927,7 +942,8 @@
         font-family: var(--ff-noto-serif);
         font-size: var(--font-size-22);
         font-weight: var(--font-weight-sm);
-        line-height: 45.8px;
+        line-height: 35.8px;
         text-align: left;
+        text-shadow: 1px 1px 2px #000000;
     }
 }

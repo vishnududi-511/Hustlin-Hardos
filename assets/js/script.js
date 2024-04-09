@@ -49,7 +49,7 @@ $(".slider-2").slick({
   speed: 300,
   prevArrow: ".prev_2",
   nextArrow: ".next_2",
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   responsive: [
     {
@@ -206,7 +206,7 @@ function backtoTop() {
 }
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 700) {
+  if (window.scrollY > 500) {
     scroll_button.setAttribute("style", "display: flex;");
   } else {
     scroll_button.setAttribute("style", "display: none;");

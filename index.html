@@ -14,6 +14,7 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/svg/slider-2-logo.svg" type="image/x-icon">
 </head>
 
 <body id="body">
@@ -77,12 +78,14 @@
         <div class="nav-2 py-2">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-lg-end lg-gap-220 justify-content-between">
-                    <p class="m-0 nav-2-font">Hustlin' Hardos</p>
+                    <a href="" class="text-decoration-none nav-2-font">
+                        <p class="m-0 ">Hustlin' Hardos</p>
+                    </a>
                     <div class="d-flex gap-18 align-items-center nav_2_items">
                         <div class="cross-btn-1 d-md-none ">
                             <img src="./assets/images/svg/cross-mark.svg" alt="cross" class="w-100">
                         </div>
-                        <a href="">
+                        <a href="https://discord.com/" target="_blank">
                             <span>
                                 <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +95,7 @@
                                 </svg>
                             </span>
                         </a>
-                        <a href="">
+                        <a href="https://twitter.com/" target="_blank">
                             <span>
                                 <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +105,7 @@
                                 </svg>
                             </span>
                         </a>
-                        <a href="">
+                        <a href="https://www.instagram.com/" target="_blank">
                             <span>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +115,7 @@
                                 </svg>
                             </span>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <span>
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +125,7 @@
                                 </svg>
                             </span>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <span>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -146,19 +149,19 @@
             <div class="container overflow-x-auto">
                 <div class="d-flex justify-content-sm-center justify-content-start">
                     <div class="nav-3-textbox border_right border_left">
-                        <a href="" class="nav-3-font">About us</a>
+                        <a href="#aboutus" class="nav-3-font">About us</a>
                     </div>
                     <div class="nav-3-textbox border_right">
-                        <a href="" class="nav-3-font">Minting</a>
+                        <a href="#Minting" class="nav-3-font">Minting</a>
                     </div>
                     <div class="nav-3-textbox border_right">
-                        <a href="" class="nav-3-font">Roadmap</a>
+                        <a href="#RoadMap" class="nav-3-font">Roadmap</a>
                     </div>
                     <div class="nav-3-textbox  border_right">
-                        <a href="" class="nav-3-font">Team</a>
+                        <a href="#Team" class="nav-3-font">Team</a>
                     </div>
                     <div class="nav-3-textbox border_right">
-                        <a href="" class="nav-3-font">FAQs</a>
+                        <a href="#FAQs" class="nav-3-font">FAQs</a>
                     </div>
                 </div>
             </div>
@@ -168,7 +171,7 @@
         </div>
     </header>
     <!-- section-1 -->
-    <section class="border_top border_bottom ">
+    <section class="border_top border_bottom " id="aboutus">
         <img src="./assets/images/section-bg-img.png" alt="bg-img" class="w-100">
     </section>
     <!-- section-2 -->
@@ -198,7 +201,9 @@
                                 NFT is your gateway to The
                                 Boardroom, one of the most rewarding and engaging online communities
                             </p>
-                            <a href="" class="sec-2-font-1 mb-1">Read More...</a>
+                            <div class="mb-3">
+                                <a href="" class="sec-2-font-1 mb-3">Read More...</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 p-0  border_lg_left ">
@@ -314,12 +319,13 @@
     <!-- section-5 -->
     <section>
         <div class="container">
-            <h2 class="section_3_heading sm-py-40 py-20 m-0">Minting</h2>
+            <h2 class="section_3_heading sm-py-40 py-20 m-0" id="Minting">Minting</h2>
         </div>
         <div class="border_top border_bottom">
             <div class="container ">
                 <div class="row flex-lg-row flex-column-reverse  border_left border_right ">
-                    <div class="col-lg-6 col-12  d-flex justify-content-center flex-column pt-lg-0 pt-4 align-items-start">
+                    <div
+                        class="col-lg-6 col-12  d-flex justify-content-center flex-column pt-lg-0 pt-4 align-items-start">
                         <div class="ps-md-3 ps-1">
                             <p class="sec-2-font-1">Most of the Hustlin’ Hardos first experienced NFTs via other
                                 successful projects like NBA TopShot, where revealing your
@@ -335,14 +341,13 @@
                                 <div class="counter border_top border_bottom d-flex align-items-center">
                                     <div class="counter  d-flex align-items-center">
                                         <button class="decrement-btn counter-font border_left ">-</button>
-                                        <div class="counter-value counter-font border_left border_right p-sm-3 p-2">100
+                                        <div class="counter-value counter-font border_left border_right p-3">100
                                         </div>
-                                        <button
-                                            class="increment-btn counter-font border_right p-sm-3 p-2 p-0">+</button>
+                                        <button class="increment-btn counter-font border_right p-3">+</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="mint mt-lg-4 mt-1">Mint NOW</button>
+                            <button class="mint mt-lg-5 mt-3">MINT NOW</button>
                             <div class="stopwatch mt-lg-4 mt-1">
                                 <p class="time-left m-0">Time Left</p>
                                 <span id="timer">00:00:00:00</span>
@@ -380,7 +385,7 @@
         </div>
         <div class="heading6 border_bottom border_top">
             <div class="container">
-                <h2 class="section_3_heading sm-py-40 py-20 m-0">RoadMap</h2>
+                <h2 class="section_3_heading sm-py-40 py-20 m-0" id="RoadMap">RoadMap</h2>
             </div>
         </div>
     </section>
@@ -508,7 +513,7 @@
     <section>
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-                <h2 class="section_3_heading sm-py-40 py-20 m-0">Team</h2>
+                <h2 class="section_3_heading sm-py-40 py-20 m-0" id="Team">Team</h2>
                 <div class="d-flex  gap-5 ">
                     <span class="prev_2">
                         <svg width="23" height="40" viewBox="0 0 23 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -566,7 +571,7 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="section_3_heading sm-py-40 py-20 m-0">Minting</h2>
+            <h2 class="section_3_heading sm-py-40 py-20 m-0" id="FAQs">FAQs</h2>
         </div>
     </section>
     <!-- section-9 (accordion) -->
@@ -696,7 +701,7 @@
                     </div>
                     <div class="accordion-box ">
                         <div class="accordion_btn position-relative ">
-                            <p class="accordion_btn_font m-0">What is the utility and functionality of a Hustlin' Hardo
+                            <p class="accordion_btn_font m-0 lg-max-width-unset md-max-width-700 ">What is the utility and functionality of a Hustlin' Hardo
                                 NFT?
                             </p>
                             <p class="accordion_btn_font accordion_sign position-absolute p-0">+</p>
