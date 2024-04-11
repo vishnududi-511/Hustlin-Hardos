@@ -75,10 +75,12 @@
     padding: 13px 0;
 }
 
+
 .percentage_box_yellow {
     border: 1px solid var(--color-yellow);
     border-radius: 5px;
     Padding: 3px 4px 3px 4px;
+
 }
 
 .percentage_box_red {
@@ -197,7 +199,7 @@
     text-align: center;
     background-color: var(--text-bg);
     color: transparent;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: 1px 1px 1px #000000;
     background-clip: text;
 }
 
@@ -211,7 +213,7 @@
     text-align: left;
     background-color: var(--text-bg);
     color: transparent;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: 1px 1px 1px #000000;
     background-clip: text;
 }
 
@@ -243,7 +245,7 @@
     text-align: left;
     background-color: var(--text-bg);
     color: transparent;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: 1px 1px 1px #000000;
     background-clip: text;
 }
 
@@ -313,11 +315,7 @@
     padding-bottom: 20px;
 }
 
-.prev {
-    cursor: pointer;
-}
-
-.next {
+.cursor_pointer {
     cursor: pointer;
 }
 
@@ -576,14 +574,6 @@
     display: flex;
 }
 
-.prev_2 {
-    cursor: pointer;
-}
-
-.next_2 {
-    cursor: pointer;
-}
-
 /* accordion */
 .accordion_btn_font {
     font-family: var(--ff-noto-serif);
@@ -609,13 +599,6 @@
     top: 24%;
 }
 
-.d_none {
-    display: none;
-}
-
-.d_block {
-    display: block;
-}
 
 .copyright {
     font-family: var(--ff-noto-serif);
@@ -652,24 +635,40 @@
     fill: var(--text-bg);
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-    cursor: pointer;
+/* Define scrollbar styles */
+.container {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: transparent transparent transparent transparent;
+    /* For Firefox */
 }
 
-/* Track */
-::-webkit-scrollbar-track {
+/* Define scrollbar thumb style for WebKit browsers */
+.container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Match background color */
+    border: none;
+    /* Remove border */
+}
+
+/* Define scrollbar track style */
+.container::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Match background color */
+}
+
+/* Define scrollbar corner style */
+.container::-webkit-scrollbar-corner {
+    background-color: transparent;
+    /* Match background color */
+}
+
+.cross-btn-2 {
+    width: 30px;
+    height: 30px;
     display: none;
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--text-bg);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 
 @media (min-width:1400px) {
     .heading_main {
@@ -704,6 +703,7 @@
         font-size: var(--font-size-48);
         font-weight: var(--font-weight-sm);
         line-height: 82.8px;
+        text-shadow: 2px 2px 3px #000000;
         text-align: left;
     }
 
@@ -753,6 +753,7 @@
         font-size: var(--font-size-96);
         font-weight: var(--font-weight-sm);
         text-align: center;
+        text-shadow: 2px 2px 3px #000000;
     }
 
     .border-right-md-none {
@@ -765,6 +766,7 @@
         font-weight: var(--font-weight-xsm);
         line-height: 83.2px;
         text-align: left;
+        text-shadow: 2px 2px 3px #000000;
     }
 
     .border_md_left {
@@ -937,13 +939,12 @@
         right: 6%;
         cursor: pointer;
     }
-
 }
 
 @media (max-width:575.98px) {
     .heading_main {
         font-family: var(--ff-ModernoFBComp);
-        font-size: 40px;
+        font-size: var(--font-size-40);
         font-weight: var(--font-weight-sm);
         text-align: center;
     }
