@@ -327,16 +327,22 @@
 
 .counter {
     width: max-content;
+    border: 2px solid var(--color-black);
 }
 
 .decrement-btn {
     border: none;
     background: transparent;
-    padding: 16px 19px 16px 19px !important;
+    padding: 12px 24px;
+}
+
+.counter-value {
+    padding: 12px 24px;
 }
 
 .increment-btn {
     background: transparent;
+    padding: 12px 24px;
     border: none;
 }
 
@@ -370,7 +376,7 @@
 
 #timer {
     font-family: var(--ff-noto-serif);
-    font-size: 36px;
+    font-size: var(--font-size-36);
     font-size: var(--font-size-36);
     font-weight: var(--font-weight-lg);
     line-height: 49.03px;
@@ -408,7 +414,6 @@
 
 .sec-6-font2 {
     font-family: var(--ff-noto-serif);
-    font-size: 36px;
     font-size: var(--font-size-36);
     font-weight: var(--font-weight-lg);
     line-height: 39.85px;
@@ -935,7 +940,7 @@
 
 }
 
-@media (max-width:576px) {
+@media (max-width:575.98px) {
     .heading_main {
         font-family: var(--ff-ModernoFBComp);
         font-size: 40px;
