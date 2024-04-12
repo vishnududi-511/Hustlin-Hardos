@@ -670,6 +670,23 @@
     display: none;
 }
 
+
+.nav_slider .slick-slide {
+    width: max-content !important;
+}
+
+.nav_slide_items1 {
+    width: 200px !important;
+}
+
+.nav_slider .slick-next {
+    display: none;
+}
+
+.nav_slider .slick-prev {
+    display: none;
+}
+
 @media (min-width:1400px) {
     .heading_main {
         font-family: var(--ff-ModernoFBComp);

@@ -1,10 +1,26 @@
+
+$(".nav_slider").slick({
+  arrows: false,
+  dots: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  variableWidth: true,
+  slidesToShow: 6,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 5000,
+  pauseOnHover: true,
+  cssEase: "linear",
+});
 $(".slider-1").slick({
   dots: false,
   infinite: true,
-  speed: 300,
+  autoplaySpeed: 1,
   prevArrow: ".prev",
   nextArrow: ".next",
   slidesToShow: 3,
+  pauseOnHover: false,
   slidesToScroll: 1,
   responsive: [
     {
